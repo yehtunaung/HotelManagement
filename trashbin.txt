@@ -1,0 +1,34 @@
+$locales =
+
+dd($locales);
+
+Home
+
+// Route::get('/', function () {
+//     return view('index');
+// })->name('index');
+
+// Route::resource('/',HomeController::class);
+
+
+menu
+
+class="form-control"
+
+dropdown
+
+data-bs-toggle="dropdown"
+
+href="#"
+
+See
+
+
+// Route::get('/trainer_specialities',function () {
+//     return view('admin.trainerSpecialites.index');
+// })->name('trainer_specialities');
+
+
+        // dd($latest_trainers);
+
+
