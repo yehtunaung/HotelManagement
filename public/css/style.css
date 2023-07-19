@@ -434,10 +434,13 @@
 }
 .booking-form{
     border-radius: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 .form-custimize{
     width: 192px;
-    border: 1px solid yellow;
+    border: 1px solid #dca73a;
     height: 44px;
 }
 .form-custimize:focus{
@@ -458,7 +461,7 @@ height: 800px;
 
 .booking-form .form-select{
     width: 100px;
-    border: 1px solid yellow;
+    border: 1px solid #dca73a;
 }
 .booking-form .form-select:focus{
    box-shadow: none;
@@ -468,10 +471,17 @@ height: 800px;
 
 }
 .booking-form .form-select option:hover{
-    background-color: yellow !important;
+    background-color: #dca73a !important;
 }
 .select{
     border: none;
     background-color: white;
 }
-
+@media screen and (max-width:991px)
+{
+    .booking-form{
+        display: flex  !important;
+        flex-wrap: wrap  !important;
+        margin-top: 34px;
+    }
+}

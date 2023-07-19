@@ -49,9 +49,9 @@
     </div>
     <div class="container booking-position">
         <div class="row justify-content-center">
-            <div class="col-sm-10 col-lg-10">
+            <div class="col-sm-8 col-lg-10">
                 <form action="">
-                    <div class="d-flex justify-content-between align-items-center bg-white p-4 booking-form shadow">
+                    <div class="bg-white p-4 booking-form shadow">
                         <div>
                             <label for="" class="form-label text-dark">Check In Date :</label>
                             <input type="datetime-local" name="" id="" class="form-custimize form-control">
@@ -84,7 +84,7 @@
                                 <option value="3">3</option>
                               </select>
                          </div>
-                            <button class="btn btn-warning mt-3 text-white py-md-3 px-md-4 animated slideInRight ">Book Now</button>
+                            <button class="btn btn-warning mt-3 text-white py-md-3 px-md-4 animated slideInRight">Book Now</button>
                     </div>
                 </form>
             </div>

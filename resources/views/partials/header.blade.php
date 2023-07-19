@@ -29,6 +29,8 @@
 
     <!-- Template Stylesheet -->
     <link href="{{ asset('css/style.css') }}" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
 </head>
 
 <body>
@@ -51,7 +53,7 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <div class="navbar-nav ms-auto p-4 p-lg-0">
-                <a href="{{ route('index') }}" class="nav-item nav-link {{ (request()->is('/')) ? 'active' : '' }}"> __{{'labels.home'}} </a>
+                <a href="{{ route('index') }}" class="nav-item nav-link {{ (request()->is('/')) ? 'active' : '' }}"> {{__('labels.home')}} </a>
                 <a href="{{ route('about') }}" class="nav-item nav-link {{ (request()->is('about')) ? 'active' : '' }}">About</a>
                 <a href="{{ route('courses') }}" class="nav-item nav-link {{ (request()->is('courses')) ? 'active' : '' }}">Room</a>
                 <div class="nav-item dropdown">
@@ -64,20 +66,31 @@
                 </div>
                 <a  class="nav-item nav-link {{ (request()->is('contact')) ? 'active' : '' }}" href="{{route('contact')}}">Contact</a>
                 <div class="nav-item dropdown">
-                    <div class="dropdown fade-down m-0">
-                        <select name="language" id="language-option" class="nav-link dropdown-toggle select">
-                            <option value="en" @if (Session::get('locale') == 'en') selected @endif>
-                                English
-                            </option>
-                            <option value="mm" @if (Session::get('locale') == 'mm') selected @endif>
-                                Myanmar
-                            </option>
-                        </select>
-                    </div>
+                    <form action="">
+                        <div class="dropdown fade-down m-0">
+                            <select name="language" id="language-option" class="nav-link dropdown-toggle select">
+                                <option value="en" @if (Session::get('locale') == 'en') selected @endif>
+                                    English
+                                </option>
+                                <option value="mm" @if (Session::get('locale') == 'mm') selected @endif>
+                                    Myanmar
+                                </option>
+                            </select>
+                        </div>
+                    </form>
+                    
 
                 </div>
             </div>
             <a href="" class="btn btn-warning py-4 px-lg-5 d-none d-lg-block">Online Booking<i class="fa fa-arrow-right ms-3"></i></a>
         </div>
     </nav>
+
+    <script>
+        $(document).ready(function() {
+            $('#language-option').change(function() {
+                window.location.href = "/locale/" + $(this).val();
+            });
+        });
+    </script>
     <!-- Navbar End -->
