@@ -1,3 +1,64 @@
+Classes
+
+Instructors
+
+eLEARNING
+
+About
+
+about
+
+cat
+
+Corses
+
+Marketing
+
+Courses
+
+Drinking & snacking
+
+snacking
+
+snack
+
+Editing
+
+drink
+
+drink
+
+Courses
+
+Graphic
+
+at-1.jpg
+
+at-1.jpg
+
+Courses
+
+Design
+
+
+
+- eLearning HTML Template
+
+
+.section-title:root {
+    --primary: #fed722;
+    --light: #F0FBFC;
+    --dark: #181d38;
+}
+
+primary
+
+Room
+
+Room
+
+Courses
+
 $locales =
 
 dd($locales);
