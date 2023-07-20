@@ -262,12 +262,12 @@
                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
                     <div class="course-item bg-light">
                         <div class="position-relative overflow-hidden">
-                            <img class="img-fluid" src="img/course-1.jpg" alt="">
+                            <img class="img-fluid" src="img/frontend/room1.jpg" alt="">
                             <div class="w-100 d-flex justify-content-center position-absolute bottom-0 start-0 mb-4">
                                 <a href="#" class="flex-shrink-0 btn btn-sm btn-warning px-3 border-end"
                                     style="border-radius: 30px 0 0 30px;">Read More</a>
                                 <a href="#" class="flex-shrink-0 btn btn-sm btn-warning px-3"
-                                    style="border-radius: 0 30px 30px 0;">Join Now</a>
+                                    style="border-radius: 0 30px 30px 0;">Book Now</a>
                             </div>
                         </div>
                         <div class="text-center p-4 pb-0">
@@ -280,7 +280,7 @@
                                 <small class="fa fa-star text-warning"></small>
                                 <small>(123)</small>
                             </div>
-                            <h5 class="mb-4">Web Design & Development Course for Beginners</h5>
+                            <h5 class="mb-4">Double Bed Room</h5>
                         </div>
                         <div class="d-flex border-top">
                             <small class="flex-fill text-center border-end py-2"><i
@@ -295,12 +295,12 @@
                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
                     <div class="course-item bg-light">
                         <div class="position-relative overflow-hidden">
-                            <img class="img-fluid" src="img/course-2.jpg" alt="">
-                            <div class="d-flex justify-content-between position-absolute bottom-0 start-0 mb-4">
+                            <img class="img-fluid" src="img/frontend/room2.jpg" alt="">
+                            <div class="w-100 d-flex justify-content-center position-absolute bottom-0 start-0 mb-4">
                                 <a href="#" class="flex-shrink-0 btn btn-sm btn-warning px-3 border-end"
                                     style="border-radius: 30px 0 0 30px;">Read More</a>
                                 <a href="#" class="flex-shrink-0 btn btn-sm btn-warning px-3"
-                                    style="border-radius: 0 30px 30px 0;">Join Now</a>
+                                    style="border-radius: 0 30px 30px 0;">Book Now</a>
                             </div>
                         </div>
                         <div class="text-center p-4 pb-0">
@@ -313,7 +313,7 @@
                                 <small class="fa fa-star text-warning"></small>
                                 <small>(123)</small>
                             </div>
-                            <h5 class="mb-4">Web Design & Development Course for Beginners</h5>
+                            <h5 class="mb-4">Luxury Double Bed Room</h5>
                         </div>
                         <div class="d-flex border-top">
                             <small class="flex-fill text-center border-end py-2"><i
@@ -328,12 +328,12 @@
                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
                     <div class="course-item bg-light">
                         <div class="position-relative overflow-hidden">
-                            <img class="img-fluid" src="img/course-3.jpg" alt="">
+                            <img class="img-fluid" src="img/frontend/room3.jpg" alt="">
                             <div class="w-100 d-flex justify-content-center position-absolute bottom-0 start-0 mb-4">
                                 <a href="#" class="flex-shrink-0 btn btn-sm btn-warning px-3 border-end"
                                     style="border-radius: 30px 0 0 30px;">Read More</a>
                                 <a href="#" class="flex-shrink-0 btn btn-sm btn-warning px-3"
-                                    style="border-radius: 0 30px 30px 0;">Join Now</a>
+                                    style="border-radius: 0 30px 30px 0;">Brook Now</a>
                             </div>
                         </div>
                         <div class="text-center p-4 pb-0">
@@ -346,7 +346,7 @@
                                 <small class="fa fa-star text-warning"></small>
                                 <small>(123)</small>
                             </div>
-                            <h5 class="mb-4">Web Design & Development Course for Beginners</h5>
+                            <h5 class="mb-4">Classic Double Bed  Room</h5>
                         </div>
                         <div class="d-flex border-top">
                             <small class="flex-fill text-center border-end py-2"><i
@@ -361,12 +361,12 @@
                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
                     <div class="course-item bg-light">
                         <div class="position-relative overflow-hidden">
-                            <img class="img-fluid" src="img/course-1.jpg" alt="">
+                            <img class="img-fluid" src="img/frontend/singleroom2.jpg" alt="">
                             <div class="w-100 d-flex justify-content-center position-absolute bottom-0 start-0 mb-4">
                                 <a href="#" class="flex-shrink-0 btn btn-sm btn-warning px-3 border-end"
                                     style="border-radius: 30px 0 0 30px;">Read More</a>
                                 <a href="#" class="flex-shrink-0 btn btn-sm btn-warning px-3"
-                                    style="border-radius: 0 30px 30px 0;">Join Now</a>
+                                    style="border-radius: 0 30px 30px 0;">Book Now</a>
                             </div>
                         </div>
                         <div class="text-center p-4 pb-0">
@@ -379,7 +379,7 @@
                                 <small class="fa fa-star text-warning"></small>
                                 <small>(123)</small>
                             </div>
-                            <h5 class="mb-4">Web Design & Development Course for Beginners</h5>
+                            <h5 class="mb-4">Classic SIngle Room</h5>
                         </div>
                         <div class="d-flex border-top">
                             <small class="flex-fill text-center border-end py-2"><i
@@ -394,7 +394,7 @@
                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
                     <div class="course-item bg-light">
                         <div class="position-relative overflow-hidden">
-                            <img class="img-fluid" src="img/course-2.jpg" alt="">
+                            <img class="img-fluid" src="img/frontend/singleroom3.jpg" alt="">
                             <div class="d-flex justify-content-between position-absolute bottom-0 start-0 mb-4">
                                 <a href="#" class="flex-shrink-0 btn btn-sm btn-warning px-3 border-end"
                                     style="border-radius: 30px 0 0 30px;">Read More</a>
@@ -412,7 +412,7 @@
                                 <small class="fa fa-star text-warning"></small>
                                 <small>(123)</small>
                             </div>
-                            <h5 class="mb-4">Web Design & Development Course for Beginners</h5>
+                            <h5 class="mb-4">Luxury Single Bed Room</h5>
                         </div>
                         <div class="d-flex border-top">
                             <small class="flex-fill text-center border-end py-2"><i
@@ -427,12 +427,12 @@
                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
                     <div class="course-item bg-light">
                         <div class="position-relative overflow-hidden">
-                            <img class="img-fluid" src="img/course-3.jpg" alt="">
+                            <img class="img-fluid" src="img/frontend/singleroom1.jpg" alt="">
                             <div class="w-100 d-flex justify-content-center position-absolute bottom-0 start-0 mb-4">
                                 <a href="#" class="flex-shrink-0 btn btn-sm btn-warning px-3 border-end"
                                     style="border-radius: 30px 0 0 30px;">Read More</a>
                                 <a href="#" class="flex-shrink-0 btn btn-sm btn-warning px-3"
-                                    style="border-radius: 0 30px 30px 0;">Join Now</a>
+                                    style="border-radius: 0 30px 30px 0;">Book Now</a>
                             </div>
                         </div>
                         <div class="text-center p-4 pb-0">
@@ -445,7 +445,7 @@
                                 <small class="fa fa-star text-warning"></small>
                                 <small>(123)</small>
                             </div>
-                            <h5 class="mb-4">Web Design & Development Course for Beginners</h5>
+                            <h5 class="mb-4">Single Room</h5>
                         </div>
                         <div class="d-flex border-top">
                             <small class="flex-fill text-center border-end py-2"><i
