@@ -60,9 +60,9 @@ Route::get('/contact', function () {
     return view('contact');
 })->name('contact');
 
-Route::get('/team', function () {
-    return view('team');
-})->name('team');
+Route::get('/facilities', function () {
+    return view('facilities');
+})->name('facilities.home');
 
 Route::get('/testimonial', function () {
     return view('testimonial');

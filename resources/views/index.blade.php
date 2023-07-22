@@ -95,7 +95,7 @@
     <!-- Carousel End -->
 
 
-    <!-- Service Start -->
+    <!-- Highlight Start -->
     <div class="container-xxl py-5">
         <div class="container">
             <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
@@ -142,7 +142,7 @@
             </div>
         </div>
     </div>
-    <!-- Service End -->
+    <!-- Highlight End -->
 
 
     <!-- About Start -->
@@ -192,7 +192,7 @@
     <!-- About End -->
 
 
-    <!-- Categories Start -->
+    <!-- Facalities Start -->
     <div class="container-xxl py-5 category">
         <div class="container">
             <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
@@ -203,7 +203,7 @@
                 <div class="col-lg-7 col-md-6">
                     <div class="row g-3">
                         <div class="col-lg-12 col-md-12 wow zoomIn" data-wow-delay="0.1s">
-                            <a class="position-relative d-block overflow-hidden" href="">
+                            <a class="position-relative d-block overflow-hidden" href="{{ route('facilities.home')}}">
                                 <img class="img-fluid" src="img/frontend/hotspring.jpg" alt="">
                                 <div class="bg-white text-center position-absolute bottom-0 end-0 py-2 px-3"
                                     style="margin: 1px;">
@@ -248,10 +248,10 @@
             </div>
         </div>
     </div>
-    <!-- Categories Start -->
+    <!-- Facalities Start -->
 
 
-    <!-- Courses Start -->
+    <!-- Room Start -->
     <div class="container-xxl py-5">
         <div class="container">
             <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
@@ -460,7 +460,7 @@
             </div>
         </div>
     </div>
-    <!-- Courses End -->
+    <!-- Room End -->
 
     {{-- Trainers start --}}
 
