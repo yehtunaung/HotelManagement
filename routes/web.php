@@ -64,6 +64,10 @@ Route::get('/facilities', function () {
     return view('facilities');
 })->name('facilities.home');
 
+Route::get('/reservation',function(){
+    return view('reservation');
+})->name('reservation');
+
 Route::get('/testimonial', function () {
     return view('testimonial');
 })->name('testimonial');

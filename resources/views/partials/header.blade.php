@@ -86,7 +86,7 @@
 
                 </div>
             </div>
-            <a href="" class="btn btn-warning py-4 px-lg-5 d-none d-lg-block">Online Booking<i class="fa fa-arrow-right ms-3"></i></a>
+            <a href="{{route('reservation')}}" class="btn btn-warning py-4 px-lg-5 d-none d-lg-block">Online Booking<i class="fa fa-arrow-right ms-3"></i></a>
         </div>
     </nav>
 
