@@ -69,7 +69,7 @@
                     </div>
                     <div class="col-md-6 my-3">
                         <label for="check_in" class="form-label">Check In Date && Time</label>
-                        <input type="datetime-local" name="check_in" id="check_in" class="form-control">
+                        <input type="text" class="form-control" placeholder="DD/MM/YYYY to DD/MM/YYYY" id="flatpickr-range" />
                     </div>
                     <div class="col-md-6 my-3">
                         <label for="check_out" class="form-label">Check Out Date && Time</label>
@@ -131,12 +131,35 @@
         $(document).on('click', '.removeRoom', function() {
             if (btnCount != 0) {
                 var row = '#' + $(this).attr('id');
-                console.log(row)
                 $(row).remove();
                 --btnCount;
             } else {
                 alert("You can't delete Room Type!");
             }
         })
+    </script>
+    <script>
+          $(() => {
+            var flatpickrDate = document.querySelector('#flatpickr-range');
+
+            if (flatpickrDate) {
+                flatpickrDate.flatpickr({
+                    monthSelectorType: 'static',
+                    mode: "range",
+                    dateFormat: "d/m/Y H:i",
+                    minDate: "today" ,
+                    enableTime: true,
+                });
+            }
+
+        })
+
+        // function formatDate(date){
+        //     let dateObj = new Date(date);
+        //     let day = dateObj.getDate();
+        //     let month = dateObj.getMonth();
+        //     let year = dateObj.getFullYear();
+        //     return `${day}/${month}/${year}`;
+        // }
     </script>
 @endsection
