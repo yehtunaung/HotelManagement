@@ -95,7 +95,7 @@
     <!-- Carousel End -->
 
 
-    <!-- Service Start -->
+    <!-- Highlight Start -->
     <div class="container-xxl py-5">
         <div class="container">
             <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
@@ -142,7 +142,7 @@
             </div>
         </div>
     </div>
-    <!-- Service End -->
+    <!-- Highlight End -->
 
 
     <!-- About Start -->
@@ -184,7 +184,7 @@
                             </p>
                         </div>
                     </div>
-                    <a class="btn btn-warning py-3 px-5 mt-2" href="">Read More</a>
+                    <a class="btn btn-warning py-3 px-5 mt-2" href="{{route('about')}}">Read More</a>
                 </div>
             </div>
         </div>
@@ -192,7 +192,7 @@
     <!-- About End -->
 
 
-    <!-- Categories Start -->
+    <!-- Facalities Start -->
     <div class="container-xxl py-5 category">
         <div class="container">
             <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
@@ -203,7 +203,7 @@
                 <div class="col-lg-7 col-md-6">
                     <div class="row g-3">
                         <div class="col-lg-12 col-md-12 wow zoomIn" data-wow-delay="0.1s">
-                            <a class="position-relative d-block overflow-hidden" href="">
+                            <a class="position-relative d-block overflow-hidden" href="{{ route('facilities.home')}}">
                                 <img class="img-fluid" src="img/frontend/hotspring.jpg" alt="">
                                 <div class="bg-white text-center position-absolute bottom-0 end-0 py-2 px-3"
                                     style="margin: 1px;">
@@ -248,10 +248,10 @@
             </div>
         </div>
     </div>
-    <!-- Categories Start -->
+    <!-- Facalities Start -->
 
 
-    <!-- Courses Start -->
+    <!-- Room Start -->
     <div class="container-xxl py-5">
         <div class="container">
             <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
@@ -358,109 +358,13 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="course-item bg-light">
-                        <div class="position-relative overflow-hidden">
-                            <img class="img-fluid" src="img/frontend/singleroom2.jpg" alt="">
-                            <div class="w-100 d-flex justify-content-center position-absolute bottom-0 start-0 mb-4">
-                                <a href="#" class="flex-shrink-0 btn btn-sm btn-warning px-3 border-end"
-                                    style="border-radius: 30px 0 0 30px;">Read More</a>
-                                <a href="#" class="flex-shrink-0 btn btn-sm btn-warning px-3"
-                                    style="border-radius: 0 30px 30px 0;">Book Now</a>
-                            </div>
-                        </div>
-                        <div class="text-center p-4 pb-0">
-                            <h3 class="mb-0">$149.00</h3>
-                            <div class="mb-3">
-                                <small class="fa fa-star text-warning"></small>
-                                <small class="fa fa-star text-warning"></small>
-                                <small class="fa fa-star text-warning"></small>
-                                <small class="fa fa-star text-warning"></small>
-                                <small class="fa fa-star text-warning"></small>
-                                <small>(123)</small>
-                            </div>
-                            <h5 class="mb-4">Classic SIngle Room</h5>
-                        </div>
-                        <div class="d-flex border-top">
-                            <small class="flex-fill text-center border-end py-2"><i
-                                    class="fa fa-user-tie text-warning me-2"></i>John Doe</small>
-                            <small class="flex-fill text-center border-end py-2"><i
-                                    class="fa fa-clock text-warning me-2"></i>1.49 Hrs</small>
-                            <small class="flex-fill text-center py-2"><i class="fa fa-user text-warning me-2"></i>30
-                                Students</small>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-                    <div class="course-item bg-light">
-                        <div class="position-relative overflow-hidden">
-                            <img class="img-fluid" src="img/frontend/singleroom3.jpg" alt="">
-                            <div class="d-flex justify-content-between position-absolute bottom-0 start-0 mb-4">
-                                <a href="#" class="flex-shrink-0 btn btn-sm btn-warning px-3 border-end"
-                                    style="border-radius: 30px 0 0 30px;">Read More</a>
-                                <a href="#" class="flex-shrink-0 btn btn-sm btn-warning px-3"
-                                    style="border-radius: 0 30px 30px 0;">Join Now</a>
-                            </div>
-                        </div>
-                        <div class="text-center p-4 pb-0">
-                            <h3 class="mb-0">$149.00</h3>
-                            <div class="mb-3">
-                                <small class="fa fa-star text-warning"></small>
-                                <small class="fa fa-star text-warning"></small>
-                                <small class="fa fa-star text-warning"></small>
-                                <small class="fa fa-star text-warning"></small>
-                                <small class="fa fa-star text-warning"></small>
-                                <small>(123)</small>
-                            </div>
-                            <h5 class="mb-4">Luxury Single Bed Room</h5>
-                        </div>
-                        <div class="d-flex border-top">
-                            <small class="flex-fill text-center border-end py-2"><i
-                                    class="fa fa-user-tie text-warning me-2"></i>John Doe</small>
-                            <small class="flex-fill text-center border-end py-2"><i
-                                    class="fa fa-clock text-warning me-2"></i>1.49 Hrs</small>
-                            <small class="flex-fill text-center py-2"><i class="fa fa-user text-warning me-2"></i>30
-                                Students</small>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-                    <div class="course-item bg-light">
-                        <div class="position-relative overflow-hidden">
-                            <img class="img-fluid" src="img/frontend/singleroom1.jpg" alt="">
-                            <div class="w-100 d-flex justify-content-center position-absolute bottom-0 start-0 mb-4">
-                                <a href="#" class="flex-shrink-0 btn btn-sm btn-warning px-3 border-end"
-                                    style="border-radius: 30px 0 0 30px;">Read More</a>
-                                <a href="#" class="flex-shrink-0 btn btn-sm btn-warning px-3"
-                                    style="border-radius: 0 30px 30px 0;">Book Now</a>
-                            </div>
-                        </div>
-                        <div class="text-center p-4 pb-0">
-                            <h3 class="mb-0">$149.00</h3>
-                            <div class="mb-3">
-                                <small class="fa fa-star text-warning"></small>
-                                <small class="fa fa-star text-warning"></small>
-                                <small class="fa fa-star text-warning"></small>
-                                <small class="fa fa-star text-warning"></small>
-                                <small class="fa fa-star text-warning"></small>
-                                <small>(123)</small>
-                            </div>
-                            <h5 class="mb-4">Single Room</h5>
-                        </div>
-                        <div class="d-flex border-top">
-                            <small class="flex-fill text-center border-end py-2"><i
-                                    class="fa fa-user-tie text-warning me-2"></i>John Doe</small>
-                            <small class="flex-fill text-center border-end py-2"><i
-                                    class="fa fa-clock text-warning me-2"></i>1.49 Hrs</small>
-                            <small class="flex-fill text-center py-2"><i class="fa fa-user text-warning me-2"></i>30
-                                Students</small>
-                        </div>
-                    </div>
-                </div>
+            </div>
+            <div class="mt-3  texte">
+                <center> <a class="btn btn-warning mx-4" href="{{ route('courses') }}"> More &#xf105; </a></center>
             </div>
         </div>
     </div>
-    <!-- Courses End -->
+    <!-- Room End -->
 
     {{-- Trainers start --}}
 

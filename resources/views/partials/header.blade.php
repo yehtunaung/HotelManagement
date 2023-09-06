@@ -31,6 +31,10 @@
     <link href="{{ asset('css/style.css') }}" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
+    {{-- Fontawsome cdn --}}
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
 </head>
 
 <body>
@@ -57,9 +61,9 @@
                 <a href="{{ route('about') }}" class="nav-item nav-link {{ (request()->is('about')) ? 'active' : '' }}">About</a>
                 <a href="{{ route('courses') }}" class="nav-item nav-link {{ (request()->is('courses')) ? 'active' : '' }}">Room</a>
                 <div class="nav-item dropdown">
-                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Services</a>
                     <div class="dropdown-menu fade-down m-0">
-                        <a href="{{route('team')}}" class="dropdown-item">Our Team</a>
+                        <a href="{{route('facilities.home')}}" class="dropdown-item">Facilities</a>
                         <a href="{{'testimonial'}}" class="dropdown-item">Testimonial</a>
                         <a href="{{'404'}}" class="dropdown-item">404 Page</a>
                     </div>
@@ -82,7 +86,7 @@
 
                 </div>
             </div>
-            <a href="" class="btn btn-warning py-4 px-lg-5 d-none d-lg-block">Online Booking<i class="fa fa-arrow-right ms-3"></i></a>
+            <a href="{{route('reservation')}}" class="btn btn-warning py-4 px-lg-5 d-none d-lg-block">Online Booking<i class="fa fa-arrow-right ms-3"></i></a>
         </div>
     </nav>
 
