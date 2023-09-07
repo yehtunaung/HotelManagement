@@ -54,11 +54,13 @@
                     <div class="bg-white p-4 booking-form shadow">
                         <div>
                             <label for="" class="form-label text-dark">Check In Date :</label>
-                            <input type="datetime-local" name="" id="" class="form-custimize form-control">
+                            {{-- <input type="datetime-local" name="" id="" class="form-custimize form-control"> --}}
+                            <input type="text" class="form-control form-custimize" placeholder="DD/MM/YYYY " id="flatpickr-1" />
                         </div>
                         <div>
                             <label for="" class="form-label  text-dark">Check Out Date :</label>
-                            <input type="datetime-local" name="" id="" class="form-custimize form-control">
+                            <input type="text" class="form-control form-custimize" placeholder="DD/MM/YYYY" id="flatpickr-2" />
+                            {{-- <input type="datetime-local" name="" id="" class="form-custimize form-control"> --}}
                         </div>
                         <div>
                             <label for="form-label  text-dark">Adults :</label>
@@ -465,4 +467,35 @@
         </div>
     </div>
     <!-- Testimonial End -->
+
+    <script>
+        $(() => {
+            var flatpickrDate = document.querySelector('#flatpickr-2');
+
+            if (flatpickrDate) {
+                flatpickrDate.flatpickr({
+                    monthSelectorType: 'static',
+                    // mode: "range",
+                    dateFormat: "d/m/Y h:i K",
+                    minDate: "today" ,
+                    enableTime: true,
+                });
+            }
+
+        })
+        $(() => {
+            var flatpickrDate = document.querySelector('#flatpickr-1');
+
+            if (flatpickrDate) {
+                flatpickrDate.flatpickr({
+                    monthSelectorType: 'static',
+                    // mode: "range",
+                    dateFormat: "d/m/Y h:i K",
+                    minDate: "today" ,
+                    enableTime: true,
+                });
+            }
+
+        })
+    </script>
 @endsection

@@ -1,0 +1,134 @@
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <!-- select2 -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet" />
+
+  <!-- select2-bootstrap4-theme -->
+  <link href="https://raw.githack.com/ttskch/select2-bootstrap4-theme/master/dist/select2-bootstrap4.css" rel="stylesheet"> <!-- for live demo page -->
+  <link href="select2-bootstrap4.css" rel="stylesheet"> <!-- for local development env -->
+
+<div class="wrapper">
+<div class="container">
+  <h3>Select2 multi-select example</h3>
+  <form>
+    <div class="form-group">
+      <label>Example of multiple select</label>
+      <select multiple placeholder="Choose skills" data-allow-clear="1">
+        <option>HTML</option>
+        <option>CSS</option>
+        <option>JavaScript</option>
+        <option>PHP</option>
+        <option>MySQL</option>
+      </select>
+    </div>
+</form>
+
+<div class="container room_add">
+    <div class="" id="row0">
+        <div class="row">
+            <div class="col-md-6 my-3">
+                <label for="room" class="form-label"><b>Room Type</b></label>
+                <select name="room" id="" class="form-select">
+                    <option value="0" selected disabled>Please Select Room Type</option>
+                    <option value="1">Single Room</option>
+                    <option value="2">Double Room</option>
+                    <option value="3">Luxury Room</option>
+                    <option value="4">Family Room</option>
+                </select>
+            </div>
+            <div class="col-md-5 my-3">
+                <label for="room" class="form-label"><b>Room Number</b></label>
+                <select multiple placeholder="Choose skills" data-allow-clear="1">
+                    <option>HTML</option>
+                    <option>CSS</option>
+                    <option>JavaScript</option>
+                    <option>PHP</option>
+                    <option>MySQL</option>
+                </select>
+            </div>
+            <div class="col-md-1 my-5">
+                <div class="d-flex">
+                    <a class="btn px-2 me-2 addRoom" id=""><i
+                            class="fa-solid text-primary fa-plus">+</i></a>
+                    <a class="btn  px-0 removeRoom" id="row0"><i
+                            class="fa-solid text-danger fa-minus" id="0">-</i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js"></script>
+
+<script>
+    $(function () {
+  $('select').each(function () {
+    $(this).select2({
+      theme: 'bootstrap4',
+      width: 'style',
+      placeholder: $(this).attr('placeholder'),
+      allowClear: Boolean($(this).data('allow-clear')),
+    });
+  });
+});
+</script>
+
+<script>
+       var btnCount = 0;
+         $(document).on('click', '.addRoom', function() {
+            ++btnCount;
+            var content = `
+                        <div class="" id="row${btnCount}">
+                            <div class="row ">
+                                <div class="col-md-6 my-3">
+                <label for="room" class="form-label"><b>Room Type</b></label>
+                <select name="room" id="" class="form-select">
+                    <option value="0" selected disabled>Please Select Room Type</option>
+                    <option value="1">Single Room</option>
+                    <option value="2">Double Room</option>
+                    <option value="3">Luxury Room</option>
+                    <option value="4">Family Room</option>
+                </select>
+            </div>
+            <div class="col-md-5 my-3">
+                <label for="room" class="form-label"><b>Room Number</b></label>
+                <select multiple placeholder="Choose skills" data-allow-clear="1">
+                    <option>HTML</option>
+                    <option>CSS</option>
+                    <option>JavaScript</option>
+                    <option>PHP</option>
+                    <option>MySQL</option>
+                </select>
+            </div>
+            <div class="col-md-1 my-5">
+                <div class="d-flex">
+                    <a class="btn px-2 me-2 addRoom" id=""><i
+                            class="fa-solid text-primary fa-plus">+</i></a>
+                    <a class="btn  px-0 removeRoom" id="row0"><i
+                            class="fa-solid text-danger fa-minus" id="0">-</i></a>
+                </div>
+            </div>
+                            </div>
+                        </div>  `;
+            $('.room_add').append(content);
+
+
+        });
+
+
+
+        $(document).on('click', '.removeRoom', function() {
+            if (btnCount != 0) {
+                var row = '#' + $(this).attr('id');
+                $(row).remove();
+                --btnCount;
+            } else {
+                alert("You can't delete Room Type!");
+            }
+        })
+</script>
