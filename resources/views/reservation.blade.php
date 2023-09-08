@@ -48,7 +48,7 @@
                                 </div>
                                 <div class="col-md-5 my-3">
                                     <label for="room" class="form-label"><b>Room Number</b></label>
-                                    <select class="form-select select2" id="multiple-select-field-0" data-placeholder="Choose anything"  multiple>
+                                    <select class="form-select select2" id="multiple-select-field-0" data-placeholder="Choose anything" multiple>
                                         <option>Christmas Island</option>
                                         <option>South Sudan</option>
                                         <option>Jamaica</option>
@@ -94,6 +94,17 @@
     <script>
         var btnCount = 0;
 
+        function initializeSelect2(elementId){
+            $(elementId).select2({
+                theme: "bootstrap-5",
+                width: $(this).data('width') ? $(this).data('width') : $(this).hasClass('w-100') ? '100%' : 'style',
+                placeholder: $(this).data('placeholder'),
+                closeOnSelect: false,
+            })
+        }
+
+        initializeSelect2('#multiple-select-field-0');
+
         //add another Room
         $(document).on('click', '.addRoom', function() {
             ++btnCount;
@@ -112,7 +123,7 @@
                                 </div>
                                 <div class="col-md-5 my-3">
                                     <label for="room" class="form-label"><b>Room Number</b></label>
-                                    <select class="form-select select2" id="multiple-select-field-${btnCount}" data-placeholder="Choose anything"  multiple>
+                                    <select class="form-select select2" id="multiple-select-field-${btnCount}" data-placeholder="Choose anything" multiple>
                                         <option>Christmas Island</option>
                                         <option>South Sudan</option>
                                         <option>Jamaica</option>
@@ -134,15 +145,8 @@
                             </div>
                         </div>  `;
             $('.room_add').append(content);
-
-
-        });
-
-        $('#multiple-select-field-' + btnCount).select2({
-            theme: "bootstrap-5",
-            width: $(this).data('width') ? $(this).data('width') : $(this).hasClass('w-100') ? '100%' : 'style',
-            placeholder: $(this).data('placeholder'),
-            closeOnSelect: false,
+            
+            initializeSelect2(`#multiple-select-field-${btnCount}`);
         });
 
         $(document).on('click', '.removeRoom', function() {
@@ -155,6 +159,7 @@
             }
         })
     </script>
+    
     <script>
         $(() => {
             var flatpickrDate = document.querySelector('#flatpickr-range');
@@ -185,21 +190,5 @@
 
         })
 
-        $('#multiple-select-field-0').select2({
-            theme: "bootstrap-5",
-            width: $(this).data('width') ? $(this).data('width') : $(this).hasClass('w-100') ? '100%' : 'style',
-            placeholder: $(this).data('placeholder'),
-            closeOnSelect: false,
-        });
-        $(function() {
-            $('select').each(function() {
-                $(this).select2({
-                    theme: 'bootstrap4',
-                    width: 'style',
-                    placeholder: $(this).attr('placeholder'),
-                    allowClear: Boolean($(this).data('allow-clear')),
-                });
-            });
-        });
     </script>
 @endsection
