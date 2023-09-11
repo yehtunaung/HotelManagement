@@ -13,32 +13,30 @@
         <div class="row">
             <form action="">
                 <div class="row">
-                    <div class="form-group">
-                        <div class="">
-                            <label for="name" class="form-label"><b>Name</b></label>
-                        </div>
-                        <div class="d-flex">
-                            <input type="text" name="first_name" id="first_name" class="form-control me-3"
-                                placeholder="first name">
-                            <input type="text" name="last_name" id="last_name" class="form-control"
-                                placeholder="last name">
-                        </div>
+                    <div class="col-md-6 my-3">
+                        <label for="name" class="form-label"><b>Name</b></label>
+                        <input type="name" name="name" id="name" class="form-control me-3"
+                            placeholder="Please Type Your Name" required>
                     </div>
                     <div class="col-md-6 my-3">
                         <label for="email" class="form-label"><b>Email</b></label>
                         <input type="email" name="email" id="email" class="form-control me-3"
-                            placeholder="Please Type example@gmail.com">
+                            placeholder="Please Type example@gmail.com" required>
                     </div>
                     <div class="col-md-6 my-3">
-                        <label for="guests" class="form-label">No of Guests</label>
-                        <input type="number" name="guests" id="guests" class="form-control">
+                        <label for="adults" class="form-label">Adults</label>
+                        <input type="number" name="adults" id="adults" class="form-control" required>
+                    </div>
+                    <div class="col-md-6 my-3">
+                        <label for="children" class="form-label">Children</label>
+                        <input type="number" name="children" id="children" class="form-control" required>
                     </div>
                     <div class="container room_add">
                         <div class="" id="row0">
                             <div class="row">
                                 <div class="col-md-6 my-3">
                                     <label for="room" class="form-label"><b>Room Type</b></label>
-                                    <select name="room" id="" class="form-select">
+                                    <select name="room" id="" class="form-select" required>
                                         <option value="0" selected disabled>Please Select Room Type</option>
                                         <option value="1">Single Room</option>
                                         <option value="2">Double Room</option>
@@ -48,15 +46,16 @@
                                 </div>
                                 <div class="col-md-5 my-3">
                                     <label for="room" class="form-label"><b>Room Number</b></label>
-                                    <select class="form-select select2" id="multiple-select-field-0" data-placeholder="Choose anything" multiple>
-                                        <option>Christmas Island</option>
-                                        <option>South Sudan</option>
-                                        <option>Jamaica</option>
-                                        <option>Kenya</option>
-                                        <option>French Guiana</option>
-                                        <option>Mayotta</option>
-                                        <option>Liechtenstein</option>
-                                        <option>Denmark</option>
+                                    <select class="form-select select2" id="multiple-select-field-0" data-placeholder="Choose anything" multiple required>
+                                        <option value="1">204</option>
+                                        <option value="1">208</option>
+                                        <option value="1" disabled>203 <span>Stock Out</span></option>
+                                        <option value="1">204</option>
+                                        <option value="1">102</option>
+                                        <option value="1">108</option>
+                                        <option value="1">111</option>
+                                        <option value="1">07</option>
+
                                     </select>
                                 </div>
                                 <div class="col-md-1 my-5">
@@ -72,13 +71,13 @@
                     </div>
                     <div class="col-md-6 my-3">
                         <label for="check_in" class="form-label">Check In Date && Time</label>
-                        <input type="text" class="form-control" placeholder="DD/MM/YYYY to DD/MM/YYYY"
-                            id="flatpickr-range" />
+                        <input type="text" class="form-control" placeholder="DD/MM/YYYY"
+                            id="flatpickr-range" required />
                     </div>
                     <div class="col-md-6 my-3">
                         <label for="check_out" class="form-label">Check Out Date && Time</label>
-                        <input type="text" class="form-control" placeholder="DD/MM/YYYY to DD/MM/YYYY"
-                            id="flatpickr-2" />
+                        <input type="text" class="form-control" placeholder="DD/MM/YYYY"
+                            id="flatpickr-2" required />
                     </div>
                     <div class="col-md-12 my-3">
                         <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
@@ -124,14 +123,14 @@
                                 <div class="col-md-5 my-3">
                                     <label for="room" class="form-label"><b>Room Number</b></label>
                                     <select class="form-select select2" id="multiple-select-field-${btnCount}" data-placeholder="Choose anything" multiple>
-                                        <option>Christmas Island</option>
-                                        <option>South Sudan</option>
-                                        <option>Jamaica</option>
-                                        <option>Kenya</option>
-                                        <option>French Guiana</option>
-                                        <option>Mayotta</option>
-                                        <option>Liechtenstein</option>
-                                        <option>Denmark</option>
+                                        <option value="1">204</option>
+                                        <option value="1">208</option>
+                                        <option value="1" disabled>203 <span>Stock Out</span></option>
+                                        <option value="1">204</option>
+                                        <option value="1">102</option>
+                                        <option value="1">108</option>
+                                        <option value="1">111</option>
+                                        <option value="1">07</option>
                                     </select>
                                 </div>
                                 <div class="col-md-1 my-5">
@@ -145,7 +144,7 @@
                             </div>
                         </div>  `;
             $('.room_add').append(content);
-            
+
             initializeSelect2(`#multiple-select-field-${btnCount}`);
         });
 
@@ -159,7 +158,7 @@
             }
         })
     </script>
-    
+
     <script>
         $(() => {
             var flatpickrDate = document.querySelector('#flatpickr-range');
@@ -167,7 +166,7 @@
             if (flatpickrDate) {
                 flatpickrDate.flatpickr({
                     monthSelectorType: 'static',
-                    mode: "range",
+                    // mode: "range",
                     dateFormat: "d/m/Y h:i K",
                     minDate: "today",
                     enableTime: true,
@@ -181,7 +180,7 @@
             if (flatpickrDate) {
                 flatpickrDate.flatpickr({
                     monthSelectorType: 'static',
-                    mode: "range",
+                    // mode: "range",
                     dateFormat: "d/m/Y h:i K",
                     minDate: "today",
                     enableTime: true,
